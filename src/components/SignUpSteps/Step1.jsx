@@ -185,7 +185,7 @@ const Step1 = ({ onNext }) => {
     <div className="relative h-[100vh] w-full flex flex-col justify-center items-center bg-[#f3f8fc]">
       <div className="h-[90vh] w-full bg-white border rounded-3xl shadow-lg">
         <div className="p-6">
-          <h3 className="text-center text-blue-600 font-semibold text-[16px]">
+          <h3 className="text-center text-[#ff6503] font-semibold text-[16px]">
             STEP 1/4
           </h3>
           <h1 className="text-2xl text-center font-semibold mt-2">
@@ -304,7 +304,7 @@ const Step1 = ({ onNext }) => {
           </button>
           <button
             type="button"
-            className="flex items-center p-2 bg-[#3F8CFF] text-white font-medium py-2 px-4 rounded-2xl"
+            className="flex items-center p-2 bg-[#ff6503] text-white font-medium py-2 px-4 rounded-2xl"
             onClick={onNext}
           >
             Next Step →

@@ -5,7 +5,7 @@ const Pagination = () => {
         <button
           key={index}
           className={`px-3 py-1 rounded ${
-            page === 1 ? "bg-green-500 text-white" : "bg-gray-100"
+            page === 1 ? "bg-[#ff6503] text-white" : "bg-gray-100"
           }`}
         >
           {page}

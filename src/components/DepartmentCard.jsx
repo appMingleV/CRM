@@ -34,7 +34,7 @@ const DepartmentCard = ({ name, role, user, icon }) => {
       <p className="text-sm text-gray-500">{role}</p>
       <button
         onClick={handleClick}
-        className="mt-2 px-4 py-1 text-sm bg-blue-500 text-white rounded "
+        className="mt-2 px-4 py-1 text-sm bg-[#ff6503] text-white rounded "
       >
         Login
       </button>

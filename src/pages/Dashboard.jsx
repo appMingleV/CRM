@@ -1,7 +1,11 @@
+import AddEmployee from "../components/AddEmployee";
+
 const Dashboard = () => {
   return (
     <>
-      <div>Dashboard</div>
+      <div>
+        <AddEmployee />
+      </div>
     </>
   );
 };

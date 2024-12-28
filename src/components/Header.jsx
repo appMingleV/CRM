@@ -16,7 +16,7 @@ const Header = () => {
           </button>
           <button className="flex justify-start items-center gap-2 rounded-lg px-3 py-2 bg-white">
             <img src={StudentImg} alt="" className="w-8 h-8 rounded-full" />
-            <span className="text-sm font-semibold  text-blue-500">
+            <span className="text-sm font-semibold  text-[#ff6503]">
               {"SK Gupta"}
             </span>
           </button>

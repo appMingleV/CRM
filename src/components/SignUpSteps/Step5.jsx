@@ -23,7 +23,7 @@ const Step5 = () => {
           {/* Business Direction */}
           <div className="flex  items-center justify-center mt-2  ">
             <button
-              className=" bg-[#3F8CFF] text-white font-medium py-2 px-4 rounded-2xl"
+              className=" bg-[#ff6503] text-white font-medium py-2 px-4 rounded-2xl"
               onClick={handleNext}
             >
               Let's Start

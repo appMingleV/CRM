@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 a.active {
-  color: #3b82f6;
-  background-color: #eaf3fe;
+  color: #ff6503;
+  background-color: #ff6503;
+  color: white;
 }
 li:has(a.active) {
-  border-right: 4px solid #3b82f6;
+  border-right: 4px solid #ff6503;
 }
 .custom-scrollbar::-webkit-scrollbar {
   display: none;

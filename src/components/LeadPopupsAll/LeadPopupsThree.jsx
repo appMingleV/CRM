@@ -1,3 +1,4 @@
+
 import { Calendar, Clock } from 'lucide-react';
 
 const LeadPopupsThree = () => {
@@ -35,19 +36,31 @@ const LeadPopupsThree = () => {
           <label className="text-sm">Possibilities of Conversion</label>
           <div className="flex space-x-4">
             <label className="flex items-center space-x-2">
-              <input type="radio" name="conversion" className="text-green-500" />
+              <input
+                type="radio"
+                name="conversion"
+                className="text-green-500"
+              />
               <span className="text-sm flex items-center">
                 <span className="text-green-500">↑</span> Highest
               </span>
             </label>
             <label className="flex items-center space-x-2">
-              <input type="radio" name="conversion" className="text-yellow-500" />
+              <input
+                type="radio"
+                name="conversion"
+                className="text-yellow-500"
+              />
               <span className="text-sm flex items-center">
                 <span className="text-yellow-500">↑</span> High
               </span>
             </label>
             <label className="flex items-center space-x-2">
-              <input type="radio" name="conversion" className="text-orange-500" />
+              <input
+                type="radio"
+                name="conversion"
+                className="text-orange-500"
+              />
               <span className="text-sm flex items-center">
                 <span className="text-orange-500">↑</span> Medium
               </span>
@@ -140,7 +153,7 @@ const LeadPopupsThree = () => {
               <option>In Review</option>
             </select>
           </div>
-          <button className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+          <button className="px-6 py-2 bg-[#ff6503] text-white rounded-lg hover:bg-[#ff8f48] transition-colors">
             Save Status
           </button>
         </div>

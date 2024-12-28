@@ -28,7 +28,7 @@ const Profile = () => {
           <button
             className={` ${
               changecomponent === "profile"
-                ? "bg-blue-500"
+                ? "bg-[#ff6503] text-white"
                 : "bg-[#E6EDF5] text-black"
             } px-4 py-2 w-[150px] h-[40px]  font-medium rounded-[20px]`}
             onClick={handleA}
@@ -38,7 +38,7 @@ const Profile = () => {
           <button
             className={` ${
               changecomponent === "lead"
-                ? "bg-blue-500"
+                ? "bg-[#ff6503] text-white"
                 : "bg-[#E6EDF5] text-black"
             } px-4 py-2 w-[150px] h-[40px]  font-medium rounded-[20px]`}
             onClick={handleB}
@@ -48,7 +48,7 @@ const Profile = () => {
           <button
             className={` ${
               changecomponent === "vacation"
-                ? "bg-blue-500"
+                ? "bg-[#ff6503] text-white"
                 : "bg-[#E6EDF5] text-black"
             } px-4 py-2 w-[150px] h-[40px]  font-medium rounded-[20px]`}
             onClick={handleC}

@@ -18,7 +18,7 @@ const Sidebar = () => {
       <div className="my-5">
         {/* Logo */}
         <div className="flex items-center justify-start w-full h-16">
-          <div className="bg-blue-500 text-white rounded-full w-14 h-14 flex items-center justify-center ml-6">
+          <div className="bg-[#ff6503] text-white rounded-full w-14 h-14 flex items-center justify-center ml-6">
             <img src={Logos.Logo} alt="Logo" className="w-14 h-14" />
           </div>
         </div>
@@ -28,7 +28,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/dashboard"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <MdDashboard className="w-6 h-6" />
               <span className="font-medium">Dashboard</span>
@@ -37,7 +37,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/leads"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <SiEnterprisedb className="w-6 h-6" />
               <span className="font-medium">Leads</span>
@@ -46,7 +46,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/calendar"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <FaCalendar className="w-5 h-5" />
               <span className="font-medium">Calendar</span>
@@ -55,7 +55,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/vacations"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <BiSolidPlaneAlt className="w-6 h-6" />
               <span className="font-medium">Vacations</span>
@@ -64,7 +64,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/employees"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <IoPeopleSharp className="w-6 h-6" />
               <span className="font-medium">Employees</span>
@@ -73,7 +73,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/profile"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <CgProfile className="w-6 h-6" />
               <span className="font-medium">Profile</span>
@@ -82,7 +82,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/messenger"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <SiMessenger className="w-6 h-6" />
               <span className="font-medium">Messenger</span>
@@ -91,7 +91,7 @@ const Sidebar = () => {
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/info-portal"
-              className="flex items-center space-x-3 text-gray-500 hover:text-blue-500 cursor-pointer hover:bg-[#EAF3FE] px-2 py-3 rounded-[10px] text-base"
+              className="flex items-center text-gray-500 hover:text-white cursor-pointer hover:bg-[#ff8f48] px-2 py-3 rounded-[4px] text-base"
             >
               <FaFolder className="w-6 h-6" />
               <span className="font-medium">Info Portal</span>

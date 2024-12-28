@@ -1,10 +1,12 @@
 import { Filter, Plus } from "lucide-react";
 import { useState } from "react";
+import AddEmployee from "../components/AddEmployee";
 import EmployeesActivity from "../components/EmployeesActivity";
 import EmployeesList from "../components/EmployeesList";
 
 const Employees = () => {
   const [showcomponent, setshowcomponent] = useState("A");
+  const [showEmployeeFrom, setShowEmployeeForm] = useState(false);
 
   const handleComponentA = () => {
     setshowcomponent("A");
@@ -25,7 +27,7 @@ const Employees = () => {
             <button
               className={`px-6 w-[50%] rounded-full ${
                 showcomponent === "A"
-                  ? "bg-blue-500 text-white"
+                  ? "bg-[#ff6503] text-white"
                   : "bg-gray-300 text-gray-600 hover:text-gray-800"
               }`}
               onClick={handleComponentA}
@@ -36,7 +38,7 @@ const Employees = () => {
             <button
               className={`px-6 py-2 w-[50%] rounded-full ${
                 showcomponent === "B"
-                  ? "bg-blue-500 text-white"
+                  ? "bg-[#ff6503] text-white"
                   : "bg-gray-300 text-gray-600 hover:text-gray-800"
               }`}
               onClick={handleComponentB}
@@ -52,7 +54,12 @@ const Employees = () => {
             <Filter size={20} />
           </div>
 
-          <button className="flex items-center gap-2 px-4 py-2 ml-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600">
+          <button
+            className="flex items-center gap-2 px-4 py-2 ml-2 bg-[#ff6503] text-white rounded-xl hover:bg-[#ff8f48]"
+            onClick={() => {
+              setShowEmployeeForm(true);
+            }}
+          >
             <Plus size={20} />
             Add Employee
           </button>
@@ -61,6 +68,7 @@ const Employees = () => {
 
       {showcomponent === "A" && <EmployeesList />}
       {showcomponent === "B" && <EmployeesActivity />}
+      {showEmployeeFrom ? <AddEmployee /> : null}
     </div>
   );
 };

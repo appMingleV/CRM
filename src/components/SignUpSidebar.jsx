@@ -68,7 +68,7 @@ const steps = [
 
 const SignUpSidebar = ({ currentStep, setCurrentStep }) => {
   return (
-    <div className="sm:w-1/5 h-[94vh] min-h-[50vh] bg-blue-500 p-6 border rounded-3xl text-white m-4 flex flex-col justify-center">
+    <div className="sm:w-1/5 h-[94vh] min-h-[50vh] bg-[#ff6503]  p-6 border rounded-3xl text-white m-4 flex flex-col justify-center">
       <div>
         <img className="mb-6 w-20 sm:w-28" src={logo} alt="Logo" />
       </div>

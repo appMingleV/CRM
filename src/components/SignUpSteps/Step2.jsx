@@ -8,7 +8,7 @@ const Step2 = ({ onNext, onPrev }) => {
     <div className="min-h-screen flex flex-col justify-between items-center mt-4   mr-6 border rounded-3xl bg-white">
       <div className="flex-1 flex mt-6">
         <div className="bg-white  rounded-lg p-8 w-full max-w-lg">
-          <h3 className="text-center text-blue-600 font-semibold  text-[16px]">
+          <h3 className="text-center text-[#ff6503] font-semibold  text-[16px]">
             STEP 2/4
           </h3>
           <h1 className="text-2xl text-center font-semibold mt-2">
@@ -84,14 +84,14 @@ const Step2 = ({ onNext, onPrev }) => {
       <div className="w-full flex justify-between items-center    border  bg-white border-t border-gray-300 py-4 px-8  rounded-bl-3xl   rounded-br-3xl">
         <button
           type="button"
-          className="flex items-center text-[#3F8CFF] font-medium"
+          className="flex items-center text-[#ff6503]  font-medium"
           onClick={onPrev}
         >
           ← Previous
         </button>
         <button
           type="button"
-          className="flex items-center  p-2  bg-[#3F8CFF] text-white font-medium py-2 px-4 rounded-2xl"
+          className="flex items-center  p-2  bg-[#ff6503] text-white font-medium py-2 px-4 rounded-2xl"
           onClick={onNext}
         >
           Next Step →

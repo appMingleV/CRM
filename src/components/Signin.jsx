@@ -33,7 +33,7 @@ const Signin = () => {
     <div className="flex items-center justify-center h-screen  bg-[#f3f8fc]  ">
       {/* Left Panel */}
 
-      <div className="w-1/3 relative rounded-l-3xl border ml-8  h-[550px]  bg-blue-500 flex flex-col justify-center items-center text-white ">
+      <div className="w-1/3 relative rounded-l-3xl border ml-8  h-[550px]  bg-[#ff6503] flex flex-col justify-center items-center text-white ">
         <div className=" absolute left-[74px] top-[40px] flex flex-col   ">
           <div className="flex gap-2">
             <img src={SigninLogo} alt="" />
@@ -124,7 +124,7 @@ const Signin = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition"
+              className="w-full  bg-[#ff6503] text-white py-2 rounded-md hover:bg-[#ffa974] transition"
             >
               Sign In →
             </button>
