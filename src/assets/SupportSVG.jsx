@@ -6,7 +6,7 @@ const SupportSVG = () => {
       <svg
         width="168"
         height="214"
-        className="ml-10 mt-2"
+        className="mx-5"
         viewBox="0 0 168 214"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

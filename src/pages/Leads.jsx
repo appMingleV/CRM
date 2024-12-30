@@ -10,40 +10,58 @@ import LeadsDetails from "../components/LeadsDetails/LeadsDetails";
 
 const Leads = () => {
   const [leadsDetailsPreview, setLeadsDetailsPreview] = useState(false);
-  // Step 3: Styles for Modal and Overlay
-  const styles = {
-    overlay: {
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      display: "flex",
-      justifyContent: "center",
-      // justifyContent: "start",
-
-      alignItems: "center",
-    },
-    modal: {
-      backgroundColor: "#fff",
-      // padding: "20px",
-      // marginLeft: "20px ",
-      // marginTop: "1px ",
-      borderRadius: "8px",
-      boxShadow: "0 2px 10px rgba(0, 0, 0, 0.3)",
-      textAlign: "center",
-      // minWidth: "300px",
-      // width:"880px"
-      // width:"900px"
-      maxWidth: "1000px",
-
-      maxHeight: "80vh",
-      overflowY: "auto",
-    },
-  };
 
   const leadsData = [
+    {
+      name: "Rajkishor Rai",
+      phone: "6203689042",
+      email: "optimizaum@..",
+      location: "Patna",
+      estimate: "2d 4h",
+      spentTime: "1d 2h",
+      assignees: ["user1.jpg", "user2.jpg", "user3.jpg"],
+      priority: "Medium",
+    },
+    {
+      name: "Rajkishor Rai",
+      phone: "6203689042",
+      email: "optimizaum@..",
+      location: "Patna",
+      estimate: "2d 4h",
+      spentTime: "1d 2h",
+      assignees: ["user1.jpg", "user2.jpg", "user3.jpg"],
+      priority: "Medium",
+    },
+    {
+      name: "Rajkishor Rai",
+      phone: "6203689042",
+      email: "optimizaum@..",
+      location: "Patna",
+      estimate: "2d 4h",
+      spentTime: "1d 2h",
+      assignees: ["user1.jpg", "user2.jpg", "user3.jpg"],
+      priority: "Medium",
+    },
+    {
+      name: "Rajkishor Rai",
+      phone: "6203689042",
+      email: "optimizaum@..",
+      location: "Patna",
+      estimate: "2d 4h",
+      spentTime: "1d 2h",
+      assignees: ["user1.jpg", "user2.jpg", "user3.jpg"],
+      priority: "Medium",
+    },
+    {
+      name: "Rajkishor Rai",
+      phone: "6203689042",
+      email: "optimizaum@..",
+      location: "Patna",
+      estimate: "2d 4h",
+      spentTime: "1d 2h",
+      assignees: ["user1.jpg", "user2.jpg", "user3.jpg"],
+      priority: "Medium",
+    },
     {
       name: "Rajkishor Rai",
       phone: "6203689042",
@@ -106,7 +124,6 @@ const Leads = () => {
               </button>
             </div>
             <div className="p-2 w-[50px] h-[50px]  flex justify-center items-center rounded-[14px] border bg-white ">
-              {/* <img src={filter} alt="" /> */}
               <LuFilter className="w-[25px] h-[25px]" />
             </div>
           </div>
@@ -203,7 +220,10 @@ const Leads = () => {
               <div>
                 <button
                   className="bg-[#E6D9FB] text-purple-600 text-sm font-medium px-4 py-2 rounded-full flex items-center"
-                  onClick={() => setLeadsDetailsPreview(!leadsDetailsPreview)}
+                  onClick={() => {
+                    setLeadsDetailsPreview(true);
+                    console.log("Modal should show:", leadsDetailsPreview); // Check if the state changes
+                  }}
                 >
                   Show More
                   <div className="h-2 w-2 bg-purple-600 rounded-full ml-1 mt-1"></div>
@@ -215,17 +235,17 @@ const Leads = () => {
       </div>
 
       {leadsDetailsPreview && (
-        <div className="flex gap-2 items-start" style={styles.overlay}>
-          <div style={styles.modal}>
-            <div className=" ">
-              <LeadsDetails />
-            </div>
-          </div>
-
-          <div className="w-[44px] h-[44px] border flex items-center justify-center bg-[red] rounded-[14px] ">
-            <button className=" w-[14px] h-[14px]" onClick={setLeadsDetailsPreview()}>
-              <RxCross2 />
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          {/* Modal content */}
+          <div className="bg-white rounded-lg shadow-lg w-3/4 max-w-[1280px] p-6 relative h-full">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+              onClick={() => setLeadsDetailsPreview(false)}
+            >
+              <RxCross2 className="w-6 h-6" />
             </button>
+            <div>Test Modal Content</div> {/* Debug content */}
+            <LeadsDetails />
           </div>
         </div>
       )}

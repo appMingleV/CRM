@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <div className="max-h-[98vh] overflow-y-auto m-1 bg-[#f4f9fd] shadow-md flex flex-col justify-between rounded-2xl py-4 sticky top-2 custom-scrollbar">
       {/* Top Section */}
-      <div className="my-5">
+      <div className="my-2">
         {/* Logo */}
         <div className="flex items-center justify-start w-full h-16">
           <div className="bg-blue-500 text-white rounded-full w-14 h-14 flex items-center justify-center ml-6">
@@ -24,7 +24,7 @@ const Sidebar = () => {
         </div>
 
         {/* Menu Items */}
-        <ul className="mt-6 space-y-4 h-[50vh] mb-5">
+        <ul className="mt-6 space-y-4 mb-5">
           <li className="w-full px-4 border-[#f4f9fd] border-r-4">
             <NavLink
               to="/dashboard"
@@ -101,10 +101,8 @@ const Sidebar = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-10">
-        <div className="w-full border flex justify-start">
-          <SupportSVG />
-        </div>
+      <div>
+        <SupportSVG />
         <NavLink to="/">
           <div className="mt-6 px-4 flex items-center space-x-3 text-gray-500 hover:text-red-500 cursor-pointer text-base">
             <RiLogoutBoxFill className="w-6 h-6" />
