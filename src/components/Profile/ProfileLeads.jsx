@@ -1,75 +1,69 @@
-import LeadsTableList from '../../components/LeadsTableList'
-
+import LeadCard from "../LeadsDetails/LeadCard.jsx";
 const ProfileLeads = () => {
-    const leads = [
-      {
-        count: 12,
-        status: "In Progress",
-        progress: "12/16 days available",
-        color: "text-cyan-500 border-cyan-500",
-      },
-      {
-        count: 6,
-        status: "Fake",
-        progress: "6/12 days available",
-        color: "text-red-500 border-red-500",
-      },
-      {
-        count: 42,
-        status: "Unread",
-        progress: "42/50 days available",
-        color: "text-purple-500 border-purple-500",
-      },
-      {
-        count: 42,
-        status: "Completed",
-        progress: "42/50 days available",
-        color: "text-purple-500 border-purple-500",
-      },
-    ];
-  
-    return (
-      <div className="min-h-screen bg-[#f4f9fd] mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
-          {leads.map((lead, index) => (
+  const leads = [
+    {
+      count: 12,
+      status: "In Progress",
+      progress: "12/16 days available",
+      color: "text-cyan-500 border-cyan-500",
+    },
+    {
+      count: 6,
+      status: "Fake",
+      progress: "6/12 days available",
+      color: "text-red-500 border-red-500",
+    },
+    {
+      count: 42,
+      status: "Unread",
+      progress: "42/50 days available",
+      color: "text-purple-500 border-purple-500",
+    },
+    {
+      count: 42,
+      status: "Completed",
+      progress: "42/50 days available",
+      color: "text-purple-500 border-purple-500",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#f4f9fd] mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+        {leads.map((lead, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-3xl h-[190px] p-6 flex flex-col items-center text-center"
+          >
+            {/* Circular Progress Indicator */}
+
             <div
-              key={index}
-              className="bg-white rounded-3xl h-[190px] p-6 flex flex-col items-center text-center"
+              className={`relative w-16 h-16 flex items-center justify-center rounded-full border-2 ${lead.color}`}
             >
-              {/* Circular Progress Indicator */}
-
-
-              <div
-                className={`relative w-16 h-16 flex items-center justify-center rounded-full border-2 ${lead.color}`}
-              >
-                <span className={`text-xl font-semibold ${lead.color}`}>
-                  {lead.count}
-                </span>
-              </div>
-
-              
-  
-              {/* Status */}
-              <h3 className="text-lg font-medium text-gray-800 mt-4">
-                {lead.status}
-              </h3>
-  
-              {/* Progress */}
-              <p className="text-sm text-gray-500 mt-2">{lead.progress}</p>
+              <span className={`text-xl font-semibold ${lead.color}`}>
+                {lead.count}
+              </span>
             </div>
-          ))}
-        </div>
-       <div className='mt-4'>
-        <LeadsTableList />
-        </div>
+
+            {/* Status */}
+            <h3 className="text-lg font-medium text-gray-800 mt-4">
+              {lead.status}
+            </h3>
+
+            {/* Progress */}
+            <p className="text-sm text-gray-500 mt-2">{lead.progress}</p>
+          </div>
+        ))}
       </div>
-    );
-  };
-  
-  export default ProfileLeads;
+      <div className="mt-4 space-y-2 border">
+        <LeadCard />
+      </div>
+    </div>
+  );
+};
 
+export default ProfileLeads;
 
-  
 //   import React from 'react';
 
 // const CircularProgress = ({ progress, count, variant = "stroke" }) => {
@@ -86,12 +80,12 @@ const ProfileLeads = () => {
 
 //     return (
 //       <svg width="100" height="100" viewBox="0 0 100 100">
-//         <circle 
-//           cx="50" 
-//           cy="50" 
-//           r="30" 
-//           fill="white" 
-//           stroke="rgb(226 232 240)" 
+//         <circle
+//           cx="50"
+//           cy="50"
+//           r="30"
+//           fill="white"
+//           stroke="rgb(226 232 240)"
 //           strokeWidth="8"
 //         />
 //         <path
@@ -195,8 +189,8 @@ const ProfileLeads = () => {
 //             className="bg-white rounded-3xl h-[190px] p-6 flex flex-col items-center text-center shadow-sm"
 //           >
 //             <div className={lead.color}>
-//               <CircularProgress 
-//                 progress={lead.progressPercent} 
+//               <CircularProgress
+//                 progress={lead.progressPercent}
 //                 count={lead.count}
 //                 variant={lead.variant}
 //               />
@@ -217,4 +211,3 @@ const ProfileLeads = () => {
 // };
 
 // export default ProfileLeads;
-  

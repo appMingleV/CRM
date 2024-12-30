@@ -34,6 +34,9 @@ const ProfileVacations = () => {
 
   return (
     <div className="min-h-screen mt-10">
+      <div>
+        <h2>Profile data</h2>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-6">
         {vacations.map((vacation, index) => (
           <div
@@ -43,7 +46,6 @@ const ProfileVacations = () => {
             {/* Circular Progress */}
             <div className="relative">
               <div className="w-20 h-20">
-                
                 <svg className="w-full h-full transform -rotate-90">
                   {/* Background Circle */}
                   <circle
@@ -68,8 +70,6 @@ const ProfileVacations = () => {
                     }`} /* Dynamic Progress */
                   />
                 </svg>
-
-
               </div>
 
               <div className="absolute inset-0 flex items-center justify-center">
@@ -93,7 +93,6 @@ const ProfileVacations = () => {
       </div>
 
       <div className="mt-8">
-        
         <MyVacationList />
       </div>
     </div>

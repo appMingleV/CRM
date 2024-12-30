@@ -59,8 +59,8 @@ function LeadsDetails() {
   };
 
   return (
-    <div className="max-h-screen border">
-      <div className="mx-auto overflow-scroll bg-white rounded-2xl shadow-sm p-6">
+    <>
+      <div className="mx-auto bg-white rounded-2xl shadow-sm p-6">
         <div className="flex flex-row items-center justify-between ml-auto gap-4 mb-4">
           <h1 className="text-xl font-semibold">Leads Details</h1>
           <div className="relative w-48">
@@ -176,7 +176,7 @@ function LeadsDetails() {
           Input +
         </button>
       </div>
-    </div>
+    </>
   );
 }
 
