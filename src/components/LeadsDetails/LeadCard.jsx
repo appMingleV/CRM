@@ -1,6 +1,10 @@
+import { useState } from "react";
+import { RxCross2 } from "react-icons/rx";
 import people from "../../assets/leadimage/people.png";
+import LeadsDetails from "../../components/LeadsDetails/LeadsDetails.jsx";
 
 const LeadCard = () => {
+  const [leadsDetailsPreview, setLeadsDetailsPreview] = useState(false);
   const leadsData = [
     {
       name: "Rajkishor Rai",
@@ -126,6 +130,21 @@ const LeadCard = () => {
           </div>
         </div>
       ))}
+      {leadsDetailsPreview && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          {/* Modal content */}
+          <div className="bg-white mt-1 rounded-lg shadow-lg w-3/4 max-w-[1280px] p-6 relative h-[700px] overflow-y-auto scrollbar-none">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+              onClick={() => setLeadsDetailsPreview(false)}
+            >
+              <RxCross2 className="w-6 h-6" />
+            </button>
+            <div>Test Modal Content</div> {/* Debug content */}
+            <LeadsDetails />
+          </div>
+        </div>
+      )}
     </>
   );
 };

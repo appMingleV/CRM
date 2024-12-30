@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { LuFilter } from "react-icons/lu";
-import { RxCross2 } from "react-icons/rx";
+
 import combinedshaped from "../assets/leadimage/CombinedShape.png";
 import selected from "../assets/leadimage/selected.png";
 import unselected from "../assets/leadimage/unselected.png";
 import LeadCard from "../components/LeadsDetails/LeadCard";
-import LeadsDetails from "../components/LeadsDetails/LeadsDetails";
 
 const Leads = () => {
-  const [leadsDetailsPreview, setLeadsDetailsPreview] = useState(false);
+
 
   return (
     <div className="mt-10 max-w-[1280px] w-full rounded-3xl mx-auto">
@@ -54,27 +53,13 @@ const Leads = () => {
         </div>
       </div>
 
-      <div className="w-full border border-red-400">
+      <div className="w-full">
         <div className="flex flex-col gap-2">
           <LeadCard />
         </div>
       </div>
 
-      {leadsDetailsPreview && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          {/* Modal content */}
-          <div className="bg-white mt-1 rounded-lg shadow-lg w-3/4 max-w-[1280px] p-6 relative h-[700px] overflow-y-auto scrollbar-none">
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
-              onClick={() => setLeadsDetailsPreview(false)}
-            >
-              <RxCross2 className="w-6 h-6" />
-            </button>
-            <div>Test Modal Content</div> {/* Debug content */}
-            <LeadsDetails />
-          </div>
-        </div>
-      )}
+
     </div>
   );
 };
